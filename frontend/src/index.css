@@ -1,0 +1,37 @@
+@import "tailwindcss";
+
+/* Custom utilities */
+.font-comic {
+  font-family: 'Comic Neue', 'Comic Sans MS', cursive;
+}
+
+.font-title {
+  font-family: 'Bangers', cursive;
+}
+
+/* Speech bubble animation */
+@keyframes bubble-pop {
+  0% { transform: scale(0); opacity: 0; }
+  50% { transform: scale(1.1); }
+  100% { transform: scale(1); opacity: 1; }
+}
+
+.animate-bubble {
+  animation: bubble-pop 0.3s ease-out;
+}
+
+/* Comic panel hover effect */
+.comic-panel:hover {
+  transform: scale(1.02);
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+}
+
+/* Loading animation */
+@keyframes pulse-glow {
+  0%, 100% { box-shadow: 0 0 20px rgba(234, 179, 8, 0.3); }
+  50% { box-shadow: 0 0 40px rgba(234, 179, 8, 0.6); }
+}
+
+.generating-glow {
+  animation: pulse-glow 2s ease-in-out infinite;
+}
