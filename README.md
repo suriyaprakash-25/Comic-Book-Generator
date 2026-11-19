@@ -100,7 +100,7 @@ Comic-Book-Generator/
 
 ### Prerequisites
 
-- Python 3.10 or newer
+- Python 3.11 or newer (Pillow 13 requires it)
 - Node.js 20 or newer (required by Vite 7)
 - A Hugging Face account and access token with permission to call Inference Providers. FLUX.1-dev is a gated model, so you may need to accept its terms on its Hugging Face page first.
 
